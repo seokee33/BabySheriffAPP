@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.Baby_check"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="400dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="#0F979797">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="아이가 보이지 않아요!"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="어서가서 확인해 주세요!"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btn_checkClose"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#BDDA9B"
+            android:text="닫기"
+            android:layout_margin="20dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

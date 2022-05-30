@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/kim04/AndroidStudioProjects/BabySheriff/app/src/main/res/drawable/shape_circle_red.xml" value="0.367" />
+        <entry key="..\:/Users/kim04/AndroidStudioProjects/BabySheriff/app/src/main/res/layout/activity_baby_check.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/kim04/AndroidStudioProjects/BabySheriff/app/src/main/res/layout/activity_baby_cryanalysis.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/kim04/AndroidStudioProjects/BabySheriff/app/src/main/res/layout/activity_baby_crying.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/kim04/AndroidStudioProjects/BabySheriff/app/src/main/res/layout/activity_baby_info.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/kim04/AndroidStudioProjects/BabySheriff/app/src/main/res/layout/activity_baby_temperature.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/kim04/AndroidStudioProjects/BabySheriff/app/src/main/res/layout/activity_cctv.xml" value="0.31875" />
+        <entry key="..\:/Users/kim04/AndroidStudioProjects/BabySheriff/app/src/main/res/layout/activity_logo.xml" value="0.1875" />
+        <entry key="..\:/Users/kim04/AndroidStudioProjects/BabySheriff/app/src/main/res/layout/activity_main.xml" value="0.2833333333333333" />
+        <entry key="..\:/Users/kim04/AndroidStudioProjects/BabySheriff/app/src/main/res/layout/activity_side_menu.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/kim04/AndroidStudioProjects/BabySheriff/app/src/main/res/layout/activity_urlconn.xml" value="0.21354166666666666" />
+        <entry key="..\:/Users/kim04/AndroidStudioProjects/BabySheriff/app/src/main/res/layout/dialog_edit.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/kim04/AndroidStudioProjects/BabySheriff/app/src/main/res/layout/item_recycler.xml" value="0.3015625" />
+        <entry key="..\:/Users/kim04/AndroidStudioProjects/BabySheriff/app/src/main/res/layout/list_item_schedule.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/kim04/AndroidStudioProjects/BabySheriff/app/src/main/res/layout/menu_diary.xml" value="0.3509259259259259" />
+        <entry key="..\:/Users/kim04/AndroidStudioProjects/BabySheriff/app/src/main/res/layout/menu_health.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/kim04/AndroidStudioProjects/BabySheriff/app/src/main/res/layout/menu_home.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/kim04/AndroidStudioProjects/BabySheriff/app/src/main/res/layout/menu_hospital.xml" value="0.22" />
+        <entry key="..\:/Users/kim04/AndroidStudioProjects/BabySheriff/app/src/main/res/layout/notification.xml" value="0.18229166666666666" />
+        <entry key="..\:/Users/kim04/AndroidStudioProjects/BabySheriff/app/src/main/res/layout/rv_hospital_item.xml" value="0.33" />
+        <entry key="..\:/Users/soee0/AndroidStudioProjects/BabySheriff/app/src/main/res/layout/activity_baby_check.xml" value="0.18385416666666668" />
+        <entry key="..\:/Users/soee0/AndroidStudioProjects/BabySheriff/app/src/main/res/layout/activity_baby_cryanalysis.xml" value="0.25" />
+        <entry key="..\:/Users/soee0/AndroidStudioProjects/BabySheriff/app/src/main/res/layout/activity_baby_crying.xml" value="0.536" />
+        <entry key="..\:/Users/soee0/AndroidStudioProjects/BabySheriff/app/src/main/res/layout/activity_baby_info.xml" value="0.136" />
+        <entry key="..\:/Users/soee0/AndroidStudioProjects/BabySheriff/app/src/main/res/layout/activity_baby_temperature.xml" value="0.2" />
+        <entry key="..\:/Users/soee0/AndroidStudioProjects/BabySheriff/app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="..\:/Users/soee0/AndroidStudioProjects/BabySheriff/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/soee0/AndroidStudioProjects/BabySheriff/app/src/main/res/layout/activity_noti.xml" value="0.1" />
+        <entry key="..\:/Users/soee0/AndroidStudioProjects/BabySheriff/app/src/main/res/layout/activity_setting_bell.xml" value="0.1" />
+        <entry key="..\:/Users/soee0/AndroidStudioProjects/BabySheriff/app/src/main/res/layout/activity_side_menu.xml" value="0.2" />
+        <entry key="..\:/Users/soee0/AndroidStudioProjects/BabySheriff/app/src/main/res/layout/activity_sign_up.xml" value="0.264" />
+        <entry key="..\:/Users/soee0/AndroidStudioProjects/BabySheriff/app/src/main/res/layout/activity_user_info.xml" value="0.264" />
+        <entry key="..\:/Users/soee0/AndroidStudioProjects/BabySheriff/app/src/main/res/layout/calendar_cell.xml" value="0.6" />
+        <entry key="..\:/Users/soee0/AndroidStudioProjects/BabySheriff/app/src/main/res/layout/item_recycler.xml" value="0.11246200607902736" />
+        <entry key="..\:/Users/soee0/AndroidStudioProjects/BabySheriff/app/src/main/res/layout/menu_diary.xml" value="0.536" />
+        <entry key="..\:/Users/soee0/AndroidStudioProjects/BabySheriff/app/src/main/res/layout/menu_health.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/soee0/AndroidStudioProjects/BabySheriff/app/src/main/res/layout/menu_home.xml" value="0.136" />
+        <entry key="..\:/Users/soee0/AndroidStudioProjects/BabySheriff/app/src/main/res/layout/menu_hospital.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/soee0/Desktop/BabySheriff-master (7)/BabySheriff-master/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.14583333333333334" />
+        <entry key="..\:/Users/soee0/Desktop/BabySheriff-master (7)/BabySheriff-master/app/src/main/res/drawable/f_radius.xml" value="0.1" />
+        <entry key="..\:/Users/soee0/Desktop/BabySheriff-master (7)/BabySheriff-master/app/src/main/res/drawable/gray_indicator.xml" value="0.14444444444444443" />
+        <entry key="..\:/Users/soee0/Desktop/BabySheriff-master (7)/BabySheriff-master/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/Users/soee0/Desktop/BabySheriff-master (7)/BabySheriff-master/app/src/main/res/drawable/layout_color.xml" value="0.26296296296296295" />
+        <entry key="..\:/Users/soee0/Desktop/BabySheriff-master (7)/BabySheriff-master/app/src/main/res/drawable/radius.xml" value="0.24722222222222223" />
+        <entry key="..\:/Users/soee0/Desktop/BabySheriff-master (7)/BabySheriff-master/app/src/main/res/drawable/radius_color.xml" value="0.26481481481481484" />
+        <entry key="..\:/Users/soee0/Desktop/BabySheriff-master (7)/BabySheriff-master/app/src/main/res/drawable/rectangle.xml" value="0.1" />
+        <entry key="..\:/Users/soee0/Desktop/BabySheriff-master (7)/BabySheriff-master/app/src/main/res/drawable/rectangle_white.xml" value="0.1" />
+        <entry key="..\:/Users/soee0/Desktop/BabySheriff-master (7)/BabySheriff-master/app/src/main/res/drawable/round_corner.xml" value="0.1" />
+        <entry key="..\:/Users/soee0/Desktop/BabySheriff-master (7)/BabySheriff-master/app/src/main/res/drawable/selector_indicator.xml" value="0.1" />
+        <entry key="..\:/Users/soee0/Desktop/BabySheriff-master (7)/BabySheriff-master/app/src/main/res/drawable/shape_circle_red.xml" value="0.2564814814814815" />
+        <entry key="..\:/Users/soee0/Desktop/BabySheriff-master (7)/BabySheriff-master/app/src/main/res/drawable/white_indicator.xml" value="0.14444444444444443" />
+        <entry key="..\:/Users/soee0/Desktop/BabySheriff-master (7)/BabySheriff-master/app/src/main/res/layout/activity_app_introduce.xml" value="0.4" />
+        <entry key="..\:/Users/soee0/Desktop/BabySheriff-master (7)/BabySheriff-master/app/src/main/res/layout/activity_app_manual.xml" value="0.176" />
+        <entry key="..\:/Users/soee0/Desktop/BabySheriff-master (7)/BabySheriff-master/app/src/main/res/layout/activity_baby_check.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/soee0/Desktop/BabySheriff-master (7)/BabySheriff-master/app/src/main/res/layout/activity_baby_cryanalysis.xml" value="0.1" />
+        <entry key="..\:/Users/soee0/Desktop/BabySheriff-master (7)/BabySheriff-master/app/src/main/res/layout/activity_baby_info.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/soee0/Desktop/BabySheriff-master (7)/BabySheriff-master/app/src/main/res/layout/activity_login.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/soee0/Desktop/BabySheriff-master (7)/BabySheriff-master/app/src/main/res/layout/activity_logo.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/soee0/Desktop/BabySheriff-master (7)/BabySheriff-master/app/src/main/res/layout/activity_main.xml" value="0.4" />
+        <entry key="..\:/Users/soee0/Desktop/BabySheriff-master (7)/BabySheriff-master/app/src/main/res/layout/activity_noti.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/soee0/Desktop/BabySheriff-master (7)/BabySheriff-master/app/src/main/res/layout/activity_setting_bell.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/soee0/Desktop/BabySheriff-master (7)/BabySheriff-master/app/src/main/res/layout/activity_side_menu.xml" value="0.264" />
+        <entry key="..\:/Users/soee0/Desktop/BabySheriff-master (7)/BabySheriff-master/app/src/main/res/layout/activity_urlconn.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/soee0/Desktop/BabySheriff-master (7)/BabySheriff-master/app/src/main/res/layout/dialog_edit.xml" value="0.4" />
+        <entry key="..\:/Users/soee0/Desktop/BabySheriff-master (7)/BabySheriff-master/app/src/main/res/layout/fragment_first.xml" value="0.1" />
+        <entry key="..\:/Users/soee0/Desktop/BabySheriff-master (7)/BabySheriff-master/app/src/main/res/layout/fragment_second.xml" value="0.1" />
+        <entry key="..\:/Users/soee0/Desktop/BabySheriff-master (7)/BabySheriff-master/app/src/main/res/layout/fragment_third.xml" value="0.1" />
+        <entry key="..\:/Users/soee0/Desktop/BabySheriff-master (7)/BabySheriff-master/app/src/main/res/layout/item_recycler.xml" value="0.1" />
+        <entry key="..\:/Users/soee0/Desktop/BabySheriff-master (7)/BabySheriff-master/app/src/main/res/layout/layout_background.xml" value="0.1" />
+        <entry key="..\:/Users/soee0/Desktop/BabySheriff-master (7)/BabySheriff-master/app/src/main/res/layout/list_item_schedule.xml" value="0.6" />
+        <entry key="..\:/Users/soee0/Desktop/BabySheriff-master (7)/BabySheriff-master/app/src/main/res/layout/manual_1.xml" value="0.176" />
+        <entry key="..\:/Users/soee0/Desktop/BabySheriff-master (7)/BabySheriff-master/app/src/main/res/layout/manual_2.xml" value="0.6" />
+        <entry key="..\:/Users/soee0/Desktop/BabySheriff-master (7)/BabySheriff-master/app/src/main/res/layout/manual_3.xml" value="0.1" />
+        <entry key="..\:/Users/soee0/Desktop/BabySheriff-master (7)/BabySheriff-master/app/src/main/res/layout/manual_4.xml" value="0.1" />
+        <entry key="..\:/Users/soee0/Desktop/BabySheriff-master (7)/BabySheriff-master/app/src/main/res/layout/manual_5.xml" value="0.264" />
+        <entry key="..\:/Users/soee0/Desktop/BabySheriff-master (7)/BabySheriff-master/app/src/main/res/layout/maunal2.xml" value="0.1" />
+        <entry key="..\:/Users/soee0/Desktop/BabySheriff-master (7)/BabySheriff-master/app/src/main/res/layout/menu_diary.xml" value="0.264" />
+        <entry key="..\:/Users/soee0/Desktop/BabySheriff-master (7)/BabySheriff-master/app/src/main/res/layout/menu_health.xml" value="0.1" />
+        <entry key="..\:/Users/soee0/Desktop/BabySheriff-master (7)/BabySheriff-master/app/src/main/res/layout/menu_home.xml" value="0.176" />
+        <entry key="..\:/Users/soee0/Desktop/BabySheriff-master (7)/BabySheriff-master/app/src/main/res/layout/menu_hospital.xml" value="0.264" />
+        <entry key="..\:/Users/soee0/Desktop/BabySheriff-master (7)/BabySheriff-master/app/src/main/res/layout/notification.xml" value="0.24974358974358973" />
+        <entry key="..\:/Users/soee0/Desktop/BabySheriff-master (7)/BabySheriff-master/app/src/main/res/layout/rv_hospital_item.xml" value="0.6" />
+        <entry key="..\:/Users/soee0/Desktop/BabySheriff-master (7)/BabySheriff-master/app/src/main/res/menu/bottom_navi_items.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/soee0/Desktop/BabySheriff-master (7)/BabySheriff-master/app/src/main/res/menu/navi.xml" value="0.264" />
+        <entry key="..\:/Users/soee0/Desktop/BabySheriff-master (7)/BabySheriff-master/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2601851851851852" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.6" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "309337807831",
+    "project_id": "babaysheriff",
+    "storage_bucket": "babaysheriff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:309337807831:android:e51e75cfe3cc6e99824992",
+        "android_client_info": {
+          "package_name": "com.sheriffs.babysheriff"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "309337807831-53i8orfvv4j7jj7jcoon6a2i2eg9e26d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sheriffs.babysheriff",
+            "certificate_hash": "85331a794ac85fc3339162a60090eca7ee26bc91"
+          }
+        },
+        {
+          "client_id": "309337807831-oj0s0h14m81riuu7af73ci4jnlj33gc5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sheriffs.babysheriff",
+            "certificate_hash": "19dda0f6e36d4116e790acd2aa91504b23d55f64"
+          }
+        },
+        {
+          "client_id": "309337807831-1q87phis6clt17vu0n6g10mu9v4u4odp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBubfJoHFPGSz0sbqjGamDW0qrb9WGyYkI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "309337807831-1q87phis6clt17vu0n6g10mu9v4u4odp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

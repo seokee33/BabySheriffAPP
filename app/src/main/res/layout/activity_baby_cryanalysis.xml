@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.Baby_cryanalysis"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="아이가 울고 있어요!"
+                android:gravity="center"
+                android:layout_margin="30dp"
+                android:textColor="@color/black"/>
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/pieChart"
+                android:layout_width="400dp"
+                android:layout_height="400dp"
+                android:layout_gravity="center"
+                android:layout_margin="30dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="지금 울음 소리 분석 결과"
+                android:gravity="center"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="아이가 무언가 불편해 하고 있습니다!"
+                android:gravity="center"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_margin="30dp"
+                android:text="이런 경우 ~를 하면 좋습니다!"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="분석결과가 정확한가요?"
+                android:gravity="center"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="아이가 운 이유에 대하여"
+                android:gravity="center"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="알려 주신다면 보다 더 정확한 분석을"
+                android:gravity="center"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="할 수 있습니다!"
+                android:gravity="center"
+                android:textColor="@color/black"/>
+
+            <LinearLayout
+                android:layout_width="260dp"
+                android:layout_height="200dp"
+                android:background="#97D8D6D6"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_margin="30dp"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="240dp"
+                    android:layout_height="80dp"
+                    android:background="#00ff0000"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/btn_Hungry"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/hungry"
+                        android:padding="0dp"
+                        android:scaleType="centerCrop"
+                        android:backgroundTint="#00ff0000"/>
+
+                    <ImageButton
+                        android:id="@+id/btn_Angry"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/angry"
+                        android:padding="0dp"
+                        android:scaleType="centerCrop"
+                        android:backgroundTint="#00ff0000"/>
+
+                    <ImageButton
+                        android:id="@+id/btn_Sick"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/sick"
+                        android:padding="0dp"
+                        android:scaleType="centerCrop"
+                        android:backgroundTint="#00ff0000"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="160dp"
+                    android:layout_height="80dp"
+                    android:background="#00ff0000"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/btn_Sleep"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/sleep"
+                        android:padding="0dp"
+                        android:scaleType="centerCrop"
+                        android:backgroundTint="#00ff0000"/>
+
+                    <ImageButton
+                        android:id="@+id/btn_Thinking"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/thinking"
+                        android:padding="0dp"
+                        android:scaleType="centerCrop"
+                        android:backgroundTint="#00ff0000"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_cryanalysis_Close"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:text="닫기"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:backgroundTint="#BDDA9B"/>
+
+            <LinearLayout
+                android:layout_width="160dp"
+                android:layout_height="80dp">
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

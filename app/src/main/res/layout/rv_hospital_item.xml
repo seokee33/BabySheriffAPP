@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp">
+    <TextView
+        android:id="@+id/tv_Hos_Name"
+        android:textColor="@color/black"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:text="병원이름"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="오전 : "/>
+
+        <TextView
+            android:id="@+id/tv_Hos_Time2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="시작"/>
+
+        <TextView
+            android:layout_marginStart="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="오후 : "/>
+
+        <TextView
+            android:id="@+id/tv_Hos_Time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="끝"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_Hos_Location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="병원 위치"/>
+
+
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="#E8E8E8" />
+
+
+</LinearLayout>

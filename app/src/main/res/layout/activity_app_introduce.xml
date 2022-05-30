@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.App_introduce">
+
+    <Button
+        android:id="@+id/btn_bell_back"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_gravity="left"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/ic_baseline_arrow_back_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.015"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/title2" />
+
+    <TextView
+        android:id="@+id/int1"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="저희 어플은, 청각장애를 가지고 있는 부모들이 조금이나마 육아를 편하게 할 수 있도록 지원합니다."
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:lineSpacingExtra="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/int2"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:lineSpacingExtra="5dp"
+        android:text="Iot기기와 웨어러블 기기 그리고 어플리케이션을\n 사용하여 아이 울음 소리를 감지 하거나,\n 아이의 체온이 올라가거나 내려갔을때,\n 그리고 아이가 카메라 범위 밖으로 사라졌을때\n 신호를 주어 부모가 아이를 확인 할 수 있도록 해주어\n 긴급 상황을 방지하도록 합니다."
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/int1" />
+
+    <TextView
+        android:id="@+id/int3"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:lineSpacingExtra="5dp"
+        android:text="또한, 육아 일기 기능을 지원하고 주변 병원 정보를 제공하여 보다 편리하게 육아를 도와주도록 하였습니다."
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/int2" />
+
+    <TextView
+        android:id="@+id/int4"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:lineSpacingExtra="5dp"
+        android:text="위에 설명한 기능들은\n 청각장애를 가지고 있지 않은 청인 부모도 보다 편리한 육아를 할 수 있도록 도롸줍니다."
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/int3" />
+
+    <TextView
+        android:id="@+id/int5"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:lineSpacingExtra="5dp"
+        android:text="-BABY SHERIFF-"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/int4" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

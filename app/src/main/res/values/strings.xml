@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">BabySheriff</string>
+    <string name="web_client_id">309337807831-oj0s0h14m81riuu7af73ci4jnlj33gc5.apps.googleusercontent.com</string>
+    <string name="msg_token_fmt" translatable="false">토큰 : %s </string>
+
+</resources>

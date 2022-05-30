@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".view.main.MainActivity"
+    android:layout_weight="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/main_background2"
+        android:orientation="vertical"
+        android:layout_weight="10">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_menu"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ic_baseline_menu_24"
+                app:backgroundTint="#B4B4B4" />
+
+        </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_Baby_Profile_home"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/baby"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="2dp" />
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/layout_color"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_cctv"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_margin="2dp"
+                android:background="@drawable/radius"
+                android:text="아이 확인하기"
+                android:textColor="#898989"
+                app:backgroundTint="#DEDEDE" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:layout_margin="5pt"
+            android:gravity="center"
+            android:text="실시간으로 아이가 장소를 벗어났는지\n 확인 할 수 있어요!"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:textStyle="bold"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_Navi"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#DADADA"
+            app:menu="@menu/bottom_navi_items" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
