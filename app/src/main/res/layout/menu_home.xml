@@ -83,19 +83,6 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_begin="462dp" />
 
-    <Button
-        android:id="@+id/btn_cctv"
-        android:layout_width="300dp"
-        android:layout_height="40dp"
-
-        android:background="@drawable/radius"
-        android:text="상태확인하기"
-        app:backgroundTint="#FFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/guideline7"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline6" />
-
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline7"
         android:layout_width="wrap_content"

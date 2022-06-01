@@ -39,7 +39,9 @@ import com.sheriffs.babysheriff.util.GetHospitalDataXml;
 import org.jetbrains.annotations.NotNull;
 
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
 import java.lang.reflect.Array;
+import java.net.URLEncoder;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -71,7 +73,7 @@ public class Menu_hospital extends Fragment implements
         view = inflater.inflate(R.layout.menu_hospital,container,false);
         hospitals = new ArrayList<>();
 
-
+        fusedLocationClient = LocationServices.getFusedLocationProviderClient(getContext());
 
         // 다이어리 리스트
         recyclerView = (RecyclerView)view.findViewById(R.id.rv_Hospital_List);
@@ -141,7 +143,17 @@ public class Menu_hospital extends Fragment implements
                             double d1 = location.getLatitude();
                             double d2 = location.getLongitude();
                             ArrayList<String> area = getAddress(d1, d2);
-                            task.execute("https://apis.data.go.kr/B552657/HsptlAsembySearchService/getHsptlMdcncListInfoInqire?serviceKey=iXusHy2%2FZz7qRhjkwpWBlGWiJaRpGZgroGBlBBow45q4oibueEQnnwMUkAUsOVG3PSlRqQKOYf2SGRxHRJAqoQ%3D%3D&QD=D002&Q0="+area.get(0)+"&Q1="+area.get(1));
+                            StringBuilder urlBuilder = new StringBuilder("http://apis.data.go.kr/B552657/HsptlAsembySearchService/getHsptlMdcncListInfoInqire"); /*URL*/
+                            try {
+                                urlBuilder.append("?" + URLEncoder.encode("serviceKey","UTF-8") + "=iXusHy2%2FZz7qRhjkwpWBlGWiJaRpGZgroGBlBBow45q4oibueEQnnwMUkAUsOVG3PSlRqQKOYf2SGRxHRJAqoQ%3D%3D"); /*Service Key*/
+                                urlBuilder.append("&" + URLEncoder.encode("Q0","UTF-8") + "=" + URLEncoder.encode(area.get(0), "UTF-8")); /*주소(시도)*/
+                                urlBuilder.append("&" + URLEncoder.encode("Q1","UTF-8") + "=" + URLEncoder.encode(area.get(1), "UTF-8")); /*주소(시군구)*/
+                                urlBuilder.append("&" + URLEncoder.encode("QD","UTF-8") + "=" + URLEncoder.encode("D002", "UTF-8")); /*CODE_MST의'D000' 참조(D001~D029)*/
+                            } catch (UnsupportedEncodingException e) {
+                                e.printStackTrace();
+                            }
+
+                            task.execute(urlBuilder.toString());
                         }
                     }
                 });

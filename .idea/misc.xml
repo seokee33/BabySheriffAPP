@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/kim04/AndroidStudioProjects/Baby/app/src/main/res/layout/activity_baby_temperature.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/kim04/AndroidStudioProjects/Baby/app/src/main/res/layout/manual_2.xml" value="0.31979166666666664" />
+        <entry key="..\:/Users/kim04/AndroidStudioProjects/Baby/app/src/main/res/layout/menu_home.xml" value="0.31979166666666664" />
         <entry key="..\:/Users/kim04/AndroidStudioProjects/BabySheriff/app/src/main/res/drawable/shape_circle_red.xml" value="0.367" />
         <entry key="..\:/Users/kim04/AndroidStudioProjects/BabySheriff/app/src/main/res/layout/activity_baby_check.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/kim04/AndroidStudioProjects/BabySheriff/app/src/main/res/layout/activity_baby_cryanalysis.xml" value="0.36614583333333334" />
