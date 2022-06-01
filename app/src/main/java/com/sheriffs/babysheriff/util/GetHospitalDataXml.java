@@ -39,6 +39,7 @@ public class GetHospitalDataXml extends AsyncTask<String, Void, Document> {
         Document doc = null;
         try {
             URL url = new URL(strings[0]);
+            Log.i("URLString",strings[0]);
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
             conn.setRequestMethod("GET");
             conn.setRequestProperty("Content-type", "application/json");

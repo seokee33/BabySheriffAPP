@@ -16,8 +16,11 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.github.mikephil.charting.animation.Easing;
 import com.github.mikephil.charting.charts.LineChart;
+import com.github.mikephil.charting.components.Description;
 import com.github.mikephil.charting.components.Legend;
+import com.github.mikephil.charting.components.MarkerView;
 import com.github.mikephil.charting.components.XAxis;
 import com.github.mikephil.charting.components.YAxis;
 import com.github.mikephil.charting.data.Entry;
@@ -34,12 +37,14 @@ import com.google.firebase.messaging.FirebaseMessaging;
 import com.sheriffs.babysheriff.R;
 import com.sheriffs.babysheriff.databinding.MenuHealthBinding;
 import com.sheriffs.babysheriff.model.Temp;
+import com.sheriffs.babysheriff.util.MyMarkerView;
 
 import org.w3c.dom.Text;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 public class Menu_health extends Fragment {
     View view;
@@ -66,13 +71,7 @@ public class Menu_health extends Fragment {
 
         temp = new ArrayList<>();
         temp_Chart = view.findViewById(R.id.temp_lineChart);
-        temp_Chart.getXAxis().setPosition(XAxis.XAxisPosition.BOTTOM);
-        temp_Chart.getAxisRight().setEnabled(false);
-        temp_Chart.getLegend().setTextColor(Color.WHITE);
-        temp_Chart.animateXY(2000, 2000);
-        temp_Chart.invalidate();
-        LineData data = new LineData();
-        temp_Chart.setData(data);
+
 
         tv_highTemp = view.findViewById(R.id.tv_highTemp);
         tv_lowTemp = view.findViewById(R.id.tv_lowTemp);
@@ -120,59 +119,103 @@ public class Menu_health extends Fragment {
                         tv_lowTemp.setText(lowTemp+"ºC");
                         tv_highTemp.setText(highTemp+"ºC");
                         tv_temp_AVG.setText(String.format("%.2fºC",allTemp/temp.size()));
+
+                        List<Entry> entries = new ArrayList<>();
+                        for(int i = 0; i<temp.size();i++){
+                            entries.add(new Entry(i,temp.get(i).getTemp()));
+                        }
+
+                        // 차트 설정
+                        temp_Chart.setExtraBottomOffset(15f); // 간격
+                        temp_Chart.getDescription().setEnabled(false); // chart 밑에 description 표시 유무
+
+                        // Legend는 차트의 범례
+                        Legend legend = temp_Chart.getLegend();
+                        legend.setVerticalAlignment(Legend.LegendVerticalAlignment.BOTTOM);
+                        legend.setHorizontalAlignment(Legend.LegendHorizontalAlignment.CENTER);
+                        legend.setForm(Legend.LegendForm.CIRCLE);
+                        legend.setFormSize(10);
+                        legend.setTextSize(13);
+                        legend.setTextColor(Color.parseColor("#A3A3A3"));
+                        legend.setOrientation(Legend.LegendOrientation.VERTICAL);
+                        legend.setDrawInside(false);
+                        legend.setYEntrySpace(5);
+                        legend.setWordWrapEnabled(true);
+                        legend.setXOffset(80f);
+                        legend.setYOffset(20f);
+                        legend.getCalculatedLineSizes();
+
+                        // XAxis (아래쪽) - 선 유무, 사이즈, 색상, 축 위치 설정
+                        XAxis xAxis = temp_Chart.getXAxis();
+                        xAxis.setDrawAxisLine(false);
+                        xAxis.setDrawGridLines(false);
+                        xAxis.setPosition(XAxis.XAxisPosition.BOTTOM); // x축 데이터 표시 위치
+                        xAxis.setGranularity(1f);
+                        xAxis.setTextSize(14f);
+                        xAxis.setTextColor(Color.rgb(118, 118, 118));
+                        xAxis.setSpaceMin(0.1f); // Chart 맨 왼쪽 간격 띄우기
+                        xAxis.setSpaceMax(0.1f); // Chart 맨 오른쪽 간격 띄우기
+
+                        // YAxis(Right) (왼쪽) - 선 유무, 데이터 최솟값/최댓값, 색상
+                        YAxis yAxisLeft = temp_Chart.getAxisLeft();
+                        yAxisLeft.setTextSize(14f);
+                        yAxisLeft.setTextColor(Color.rgb(163, 163, 163));
+                        yAxisLeft.setDrawAxisLine(false);
+                        yAxisLeft.setAxisLineWidth(2);
+                        yAxisLeft.setAxisMinimum(0f); // 최솟값
+                        yAxisLeft.setAxisMaximum(40); // 최댓값
+                        yAxisLeft.setGranularity(5);
+
+                        // YAxis(Left) (오른쪽) - 선 유무, 데이터 최솟값/최댓값, 색상
+                        YAxis yAxis = temp_Chart.getAxisRight();
+                        yAxis.setDrawLabels(false); // label 삭제
+                        yAxis.setTextColor(Color.rgb(163, 163, 163));
+                        yAxis.setDrawAxisLine(false);
+                        yAxis.setAxisLineWidth(2);
+                        yAxis.setAxisMinimum(0f); // 최솟값
+                        yAxis.setAxisMaximum(40); // 최댓값
+                        yAxis.setGranularity(5);
+
+                        // XAxis에 원하는 String 설정하기 (날짜)
+                        xAxis.setValueFormatter(new ValueFormatter() {
+
+                            @Override
+                            public String getFormattedValue(float value) {
+                                return temp.get((int)value).getDate();
+                            }
+                        });
+                        LineData chartData = new LineData();
+                        LineDataSet lineDataSet1 = new LineDataSet(entries, "체온");
+                        chartData.addDataSet(lineDataSet1);
+
+                        lineDataSet1.setLineWidth(3);
+                        lineDataSet1.setCircleRadius(6);
+                        lineDataSet1.setDrawValues(false);
+                        lineDataSet1.setDrawCircleHole(true);
+                        lineDataSet1.setDrawCircles(true);
+                        lineDataSet1.setDrawHorizontalHighlightIndicator(false);
+                        lineDataSet1.setDrawHighlightIndicators(false);
+                        lineDataSet1.setColor(Color.rgb(255, 155, 155));
+                        lineDataSet1.setCircleColor(Color.rgb(255, 155, 155));
+
+                        MyMarkerView mv1 = new MyMarkerView(getContext(), R.layout.markerview);
+                        mv1.setChartView(temp_Chart);
+                        temp_Chart.setMarker(mv1);
+                        temp_Chart.setData(chartData); // LineData 전달
+                        temp_Chart.invalidate(); // LineChart 갱신해 데이터 표시
                     }
                 }
             });
 
-        addEntry();
+
 
         return view;
     }
 
+    private void configureChartAppearance(LineChart lineChart, int range) {
 
 
-
-    private void addEntry() {
-        LineData data = temp_Chart.getData();
-        if (data != null) {
-            ILineDataSet set = data.getDataSetByIndex(0);
-            if (set == null) {
-                set = createSet();
-                data.addDataSet(set);
-            }
-            for(Temp t :temp){
-                data.addEntry(new Entry(Integer.parseInt(t.getDate().replace(":","")), t.getTemp()), 0);
-            }
-            data.notifyDataChanged();
-            temp_Chart.notifyDataSetChanged();
-            temp_Chart.setVisibleXRangeMaximum(10);
-            temp_Chart.moveViewToX(data.getEntryCount());
-        }
     }
-
-
-
-
-    private LineDataSet createSet() {
-        LineDataSet set = new LineDataSet(null, "Dynamic Data");
-        set.setFillAlpha(110);
-        set.setFillColor(Color.parseColor("#d7e7fa"));
-        set.setColor(Color.parseColor("#0B80C9"));
-        set.setCircleColor(Color.parseColor("#FFA1B4DC"));
-        set.setCircleHoleColor(Color.BLUE);
-        set.setValueTextColor(Color.WHITE);
-        set.setDrawValues(false);
-        set.setLineWidth(2);
-        set.setCircleRadius(6);
-        set.setDrawCircleHole(false);
-        set.setDrawCircles(false);
-        set.setValueTextSize(9f);
-        set.setDrawFilled(true);
-        set.setAxisDependency(YAxis.AxisDependency.LEFT);
-        set.setHighLightColor(Color.rgb(244, 117, 117));
-        return set;
-    }
-
 
     private String getTime() {
         long now = System.currentTimeMillis();

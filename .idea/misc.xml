@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/kim04/AndroidStudioProjects/Baby/app/src/main/res/drawable/bg_marker.xml" value="0.2535" />
+        <entry key="..\:/Users/kim04/AndroidStudioProjects/Baby/app/src/main/res/drawable/bg_marker_tail.xml" value="0.2535" />
         <entry key="..\:/Users/kim04/AndroidStudioProjects/Baby/app/src/main/res/layout/activity_baby_cryanalysis.xml" value="0.253125" />
         <entry key="..\:/Users/kim04/AndroidStudioProjects/Baby/app/src/main/res/layout/activity_baby_crying.xml" value="0.253125" />
         <entry key="..\:/Users/kim04/AndroidStudioProjects/Baby/app/src/main/res/layout/activity_baby_info.xml" value="0.253125" />
@@ -13,6 +15,7 @@
         <entry key="..\:/Users/kim04/AndroidStudioProjects/Baby/app/src/main/res/layout/activity_side_menu.xml" value="0.253125" />
         <entry key="..\:/Users/kim04/AndroidStudioProjects/Baby/app/src/main/res/layout/activity_user_info.xml" value="0.253125" />
         <entry key="..\:/Users/kim04/AndroidStudioProjects/Baby/app/src/main/res/layout/manual_2.xml" value="0.31979166666666664" />
+        <entry key="..\:/Users/kim04/AndroidStudioProjects/Baby/app/src/main/res/layout/markerview.xml" value="0.75" />
         <entry key="..\:/Users/kim04/AndroidStudioProjects/Baby/app/src/main/res/layout/menu_health.xml" value="0.2833333333333333" />
         <entry key="..\:/Users/kim04/AndroidStudioProjects/Baby/app/src/main/res/layout/menu_home.xml" value="0.31979166666666664" />
         <entry key="..\:/Users/kim04/AndroidStudioProjects/BabySheriff/app/src/main/res/drawable/shape_circle_red.xml" value="0.367" />

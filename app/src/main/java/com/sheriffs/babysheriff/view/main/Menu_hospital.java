@@ -143,7 +143,7 @@ public class Menu_hospital extends Fragment implements
                             double d1 = location.getLatitude();
                             double d2 = location.getLongitude();
                             ArrayList<String> area = getAddress(d1, d2);
-                            StringBuilder urlBuilder = new StringBuilder("http://apis.data.go.kr/B552657/HsptlAsembySearchService/getHsptlMdcncListInfoInqire"); /*URL*/
+                            StringBuilder urlBuilder = new StringBuilder(" http://apis.data.go.kr/B552657/HsptlAsembySearchService/getHsptlMdcncListInfoInqire"); /*URL*/
                             try {
                                 urlBuilder.append("?" + URLEncoder.encode("serviceKey","UTF-8") + "=iXusHy2%2FZz7qRhjkwpWBlGWiJaRpGZgroGBlBBow45q4oibueEQnnwMUkAUsOVG3PSlRqQKOYf2SGRxHRJAqoQ%3D%3D"); /*Service Key*/
                                 urlBuilder.append("&" + URLEncoder.encode("Q0","UTF-8") + "=" + URLEncoder.encode(area.get(0), "UTF-8")); /*주소(시도)*/
