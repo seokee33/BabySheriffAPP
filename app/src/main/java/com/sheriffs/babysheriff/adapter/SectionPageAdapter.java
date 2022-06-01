@@ -1,4 +1,4 @@
-package com.sheriffs.babysheriff.view;
+package com.sheriffs.babysheriff.adapter;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;

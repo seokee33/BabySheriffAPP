@@ -1,4 +1,4 @@
-package com.sheriffs.babysheriff.view;
+package com.sheriffs.babysheriff.view.notification;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;

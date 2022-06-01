@@ -1,4 +1,4 @@
-package com.sheriffs.babysheriff.view;
+package com.sheriffs.babysheriff.view.manual;
 
 import androidx.appcompat.app.AppCompatActivity;
 

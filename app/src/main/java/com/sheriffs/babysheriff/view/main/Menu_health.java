@@ -129,6 +129,9 @@ public class Menu_health extends Fragment {
         return view;
     }
 
+
+
+
     private void addEntry() {
         LineData data = temp_Chart.getData();
         if (data != null) {
@@ -146,6 +149,9 @@ public class Menu_health extends Fragment {
             temp_Chart.moveViewToX(data.getEntryCount());
         }
     }
+
+
+
 
     private LineDataSet createSet() {
         LineDataSet set = new LineDataSet(null, "Dynamic Data");

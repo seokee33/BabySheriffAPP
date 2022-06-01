@@ -1,14 +1,12 @@
-package com.sheriffs.babysheriff.view;
+package com.sheriffs.babysheriff.view.manual;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
 
 import com.sheriffs.babysheriff.R;
+import com.sheriffs.babysheriff.adapter.SectionPageAdapter;
 
 import me.relex.circleindicator.CircleIndicator;
 

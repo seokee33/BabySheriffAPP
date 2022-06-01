@@ -12,10 +12,10 @@ import android.os.Build;
 import androidx.annotation.RequiresApi;
 import androidx.core.app.NotificationCompat;
 
-import com.sheriffs.babysheriff.view.Baby_temperature;
+import com.sheriffs.babysheriff.view.notification.Baby_temperature;
 import com.sheriffs.babysheriff.R;
-import com.sheriffs.babysheriff.view.Baby_check;
-import com.sheriffs.babysheriff.view.Baby_crying;
+import com.sheriffs.babysheriff.view.notification.Baby_check;
+import com.sheriffs.babysheriff.view.notification.Baby_crying;
 
 public class NotificationHelper extends ContextWrapper {
     public static final String channelId = "channelID";

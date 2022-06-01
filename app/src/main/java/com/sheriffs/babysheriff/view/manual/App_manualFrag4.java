@@ -1,4 +1,4 @@
-package com.sheriffs.babysheriff.view;
+package com.sheriffs.babysheriff.view.manual;
 
 import android.graphics.Color;
 import android.os.Bundle;

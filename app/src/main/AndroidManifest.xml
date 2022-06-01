@@ -18,10 +18,13 @@
         android:theme="@style/Theme.BabySheriff"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".view.App_manual"
+            android:name=".view.setting.ConnectRPI"
             android:exported="false" />
         <activity
-            android:name=".view.App_introduce"
+            android:name=".view.manual.App_manual"
+            android:exported="false" />
+        <activity
+            android:name=".view.manual.App_introduce"
             android:exported="false" />
 
         <service
@@ -33,27 +36,26 @@
         </service>
 
         <activity
-            android:name=".view.User_info"
+            android:name=".view.notification.User_info"
             android:exported="false" />
         <activity
-            android:name=".view.Baby_info"
+            android:name=".view.notification.Baby_info"
             android:exported="false" />
         <activity
-            android:name=".view.Baby_check"
+            android:name=".view.notification.Baby_check"
             android:exported="false" />
         <activity
-            android:name=".view.Baby_temperature"
+            android:name=".view.notification.Baby_temperature"
             android:exported="false" />
         <activity
-            android:name=".view.Baby_cryanalysis"
+            android:name=".view.notification.Baby_cryanalysis"
             android:exported="false" />
         <activity
-            android:name=".view.Baby_crying"
+            android:name=".view.notification.Baby_crying"
             android:exported="false" />
         <activity
-            android:name=".view.setting_Bell"
+            android:name=".view.notification.setting_Bell"
             android:exported="false" />
-        <activity android:name=".view.Noti" />
         <activity
             android:name=".view.Login.SignUp"
             android:screenOrientation="portrait" />

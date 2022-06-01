@@ -1,4 +1,4 @@
-package com.sheriffs.babysheriff.view;
+package com.sheriffs.babysheriff.view.manual;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,13 +9,11 @@ import androidx.fragment.app.Fragment;
 
 import com.sheriffs.babysheriff.R;
 
-public class App_manualFrag1 extends Fragment {
-
-    @Override
+public class App_manualFrag2 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         ViewGroup rootView = (ViewGroup) inflater.inflate(
-                R.layout.manual_1, container, false);
+                R.layout.manual_2, container, false);
         return rootView;
     }
 }

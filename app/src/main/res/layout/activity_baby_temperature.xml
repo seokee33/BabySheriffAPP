@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.Baby_temperature"
+    tools:context=".view.notification.Baby_temperature"
     android:gravity="center"
     android:orientation="vertical">
 

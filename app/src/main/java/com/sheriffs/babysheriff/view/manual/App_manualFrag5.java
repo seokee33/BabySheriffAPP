@@ -1,4 +1,4 @@
-package com.sheriffs.babysheriff.view;
+package com.sheriffs.babysheriff.view.manual;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

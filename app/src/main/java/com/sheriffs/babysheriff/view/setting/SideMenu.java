@@ -10,9 +10,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.sheriffs.babysheriff.R;
 import com.sheriffs.babysheriff.databinding.ActivitySideMenuBinding;
-import com.sheriffs.babysheriff.view.App_introduce;
-import com.sheriffs.babysheriff.view.App_manual;
-import com.sheriffs.babysheriff.view.setting_Bell;
+import com.sheriffs.babysheriff.view.manual.App_introduce;
+import com.sheriffs.babysheriff.view.manual.App_manual;
+import com.sheriffs.babysheriff.view.notification.setting_Bell;
 
 public class SideMenu extends AppCompatActivity {
     private ActivitySideMenuBinding binding;
@@ -22,6 +22,7 @@ public class SideMenu extends AppCompatActivity {
     private TextView tv_setting_Profile;
     private TextView tv_App_introduce;
     private TextView tv_Use;
+    private TextView tv_setting_Device_Connection;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,6 +65,14 @@ public class SideMenu extends AppCompatActivity {
             }
         });
 
+        tv_setting_Device_Connection = findViewById(R.id.tv_setting_Device_Connection);
+        tv_setting_Device_Connection.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SideMenu.this, ConnectRPI.class);
+                startActivity(intent);
+            }
+        });
 
     }
 
