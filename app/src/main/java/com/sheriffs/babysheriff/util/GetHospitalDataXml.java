@@ -1,12 +1,10 @@
 package com.sheriffs.babysheriff.util;
 
-import android.content.Context;
 import android.os.AsyncTask;
 import android.util.Log;
 
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.sheriffs.babysheriff.model.Hospital;
-import com.sheriffs.babysheriff.view.main.MainActivity;
 import com.sheriffs.babysheriff.view.main.Menu_hospital;
 
 import org.w3c.dom.Document;
@@ -20,7 +18,6 @@ import java.io.InputStreamReader;
 import java.io.StringReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.net.URLEncoder;
 import java.util.ArrayList;
 
 import javax.xml.parsers.DocumentBuilder;

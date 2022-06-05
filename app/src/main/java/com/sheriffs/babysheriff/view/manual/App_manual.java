@@ -1,9 +1,9 @@
 package com.sheriffs.babysheriff.view.manual;
 
+import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
-
-import android.os.Bundle;
 
 import com.sheriffs.babysheriff.R;
 import com.sheriffs.babysheriff.adapter.SectionPageAdapter;

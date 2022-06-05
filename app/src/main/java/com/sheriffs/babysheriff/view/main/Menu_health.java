@@ -1,45 +1,34 @@
 package com.sheriffs.babysheriff.view.main;
 
-import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.TextClock;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.github.mikephil.charting.animation.Easing;
 import com.github.mikephil.charting.charts.LineChart;
-import com.github.mikephil.charting.components.Description;
 import com.github.mikephil.charting.components.Legend;
-import com.github.mikephil.charting.components.MarkerView;
 import com.github.mikephil.charting.components.XAxis;
 import com.github.mikephil.charting.components.YAxis;
 import com.github.mikephil.charting.data.Entry;
 import com.github.mikephil.charting.data.LineData;
 import com.github.mikephil.charting.data.LineDataSet;
 import com.github.mikephil.charting.formatter.ValueFormatter;
-import com.github.mikephil.charting.interfaces.datasets.ILineDataSet;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.messaging.FirebaseMessaging;
 import com.sheriffs.babysheriff.R;
 import com.sheriffs.babysheriff.databinding.MenuHealthBinding;
 import com.sheriffs.babysheriff.model.Temp;
 import com.sheriffs.babysheriff.util.MyMarkerView;
-
-import org.w3c.dom.Text;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -118,6 +107,19 @@ public class Menu_health extends Fragment {
                         }
                         tv_lowTemp.setText(lowTemp+"ºC");
                         tv_highTemp.setText(highTemp+"ºC");
+                        if(lowTemp>= 37.5){
+                            tv_lowTemp.setTextColor(Color.RED);
+                        }else{
+                            tv_lowTemp.setTextColor(Color.BLUE);
+                        }
+
+                        if(highTemp>= 37.5){
+                            tv_highTemp.setTextColor(Color.RED);
+                        }else{
+                            tv_highTemp.setTextColor(Color.BLUE);
+                        }
+
+
                         tv_temp_AVG.setText(String.format("%.2fºC",allTemp/temp.size()));
 
                         List<Entry> entries = new ArrayList<>();
@@ -197,12 +199,17 @@ public class Menu_health extends Fragment {
                         lineDataSet1.setDrawHighlightIndicators(false);
                         lineDataSet1.setColor(Color.rgb(255, 155, 155));
                         lineDataSet1.setCircleColor(Color.rgb(255, 155, 155));
+                        try {
+                            MyMarkerView mv1 = new MyMarkerView(getContext(), R.layout.markerview);
+                            mv1.setChartView(temp_Chart);
+                            temp_Chart.setMarker(mv1);
+                        }catch (Exception e){
+                            Log.i("MarkerViewErr",e.toString());
+                        }finally {
+                            temp_Chart.setData(chartData); // LineData 전달
+                            temp_Chart.invalidate(); // LineChart 갱신해 데이터 표시
+                        }
 
-                        MyMarkerView mv1 = new MyMarkerView(getContext(), R.layout.markerview);
-                        mv1.setChartView(temp_Chart);
-                        temp_Chart.setMarker(mv1);
-                        temp_Chart.setData(chartData); // LineData 전달
-                        temp_Chart.invalidate(); // LineChart 갱신해 데이터 표시
                     }
                 }
             });

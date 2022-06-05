@@ -1,12 +1,12 @@
 package com.sheriffs.babysheriff.view.notification;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.NotificationCompat;
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.NotificationCompat;
 
 import com.sheriffs.babysheriff.R;
 import com.sheriffs.babysheriff.util.NotificationHelper;

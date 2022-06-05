@@ -1,22 +1,22 @@
 package com.sheriffs.babysheriff.view.main;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
+
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.messaging.FirebaseMessaging;
-import com.sheriffs.babysheriff.util.BackPressHandler;
 import com.sheriffs.babysheriff.R;
 import com.sheriffs.babysheriff.databinding.ActivityMainBinding;
+import com.sheriffs.babysheriff.util.BackPressHandler;
 import com.sheriffs.babysheriff.view.setting.SideMenu;
 
 import org.jetbrains.annotations.NotNull;

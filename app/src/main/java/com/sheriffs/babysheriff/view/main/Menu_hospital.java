@@ -4,8 +4,6 @@ import android.annotation.SuppressLint;
 import android.location.Address;
 import android.location.Geocoder;
 import android.location.Location;
-import android.location.LocationManager;
-import android.nfc.Tag;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -32,18 +30,13 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.sheriffs.babysheriff.R;
 import com.sheriffs.babysheriff.adapter.HospitalListAdapter;
-import com.sheriffs.babysheriff.databinding.MenuHealthBinding;
 import com.sheriffs.babysheriff.model.Hospital;
 import com.sheriffs.babysheriff.util.GetHospitalDataXml;
 
-import org.jetbrains.annotations.NotNull;
-
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
-import java.lang.reflect.Array;
 import java.net.URLEncoder;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
 public class Menu_hospital extends Fragment implements
@@ -142,14 +135,18 @@ public class Menu_hospital extends Fragment implements
                             map.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(location.getLatitude(), location.getLongitude()) , Zoom));
                             double d1 = location.getLatitude();
                             double d2 = location.getLongitude();
-                            ArrayList<String> area = getAddress(d1, d2);
+
+
                             StringBuilder urlBuilder = new StringBuilder(" http://apis.data.go.kr/B552657/HsptlAsembySearchService/getHsptlMdcncListInfoInqire"); /*URL*/
                             try {
+                                ArrayList<String> area = getAddress(d1, d2);
                                 urlBuilder.append("?" + URLEncoder.encode("serviceKey","UTF-8") + "=iXusHy2%2FZz7qRhjkwpWBlGWiJaRpGZgroGBlBBow45q4oibueEQnnwMUkAUsOVG3PSlRqQKOYf2SGRxHRJAqoQ%3D%3D"); /*Service Key*/
                                 urlBuilder.append("&" + URLEncoder.encode("Q0","UTF-8") + "=" + URLEncoder.encode(area.get(0), "UTF-8")); /*주소(시도)*/
                                 urlBuilder.append("&" + URLEncoder.encode("Q1","UTF-8") + "=" + URLEncoder.encode(area.get(1), "UTF-8")); /*주소(시군구)*/
                                 urlBuilder.append("&" + URLEncoder.encode("QD","UTF-8") + "=" + URLEncoder.encode("D002", "UTF-8")); /*CODE_MST의'D000' 참조(D001~D029)*/
                             } catch (UnsupportedEncodingException e) {
+                                e.printStackTrace();
+                            }catch (NullPointerException e){
                                 e.printStackTrace();
                             }
 
@@ -164,12 +161,15 @@ public class Menu_hospital extends Fragment implements
         TextView tv = view.findViewById(R.id.tv_address);
         List<Address> list = null;
         ArrayList<String> result = new ArrayList<>();
-        final Geocoder geocoder = new Geocoder(this.getContext());
+        final Geocoder geocoder;
         try {
+            geocoder = new Geocoder(this.getContext());
             list = geocoder.getFromLocation(d1,d2,1);
         } catch (IOException e) {
             e.printStackTrace();
             Log.e("test", "입출력 오류 - 서버에서 주소변환시 에러발생");
+        }catch (Exception e){
+            e.printStackTrace();
         }
         if(list != null){
             if(list.size()==0){
