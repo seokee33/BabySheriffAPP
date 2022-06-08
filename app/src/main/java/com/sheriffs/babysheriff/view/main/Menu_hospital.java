@@ -130,7 +130,6 @@ public class Menu_hospital extends Fragment implements
                 .addOnSuccessListener( getActivity(), new OnSuccessListener<Location>() {
                     @Override
                     public void onSuccess(Location location) {
-                        // Got last known location. In some rare situations this can be null.
                         if (location != null) {
                             map.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(location.getLatitude(), location.getLongitude()) , Zoom));
                             double d1 = location.getLatitude();

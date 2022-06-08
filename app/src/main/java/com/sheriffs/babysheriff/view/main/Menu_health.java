@@ -219,11 +219,6 @@ public class Menu_health extends Fragment {
         return view;
     }
 
-    private void configureChartAppearance(LineChart lineChart, int range) {
-
-
-    }
-
     private String getTime() {
         long now = System.currentTimeMillis();
         Date date = new Date(now);

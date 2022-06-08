@@ -28,7 +28,6 @@ import java.util.Date;
 
 public class Menu_home extends Fragment {
     View view;
-    Button btn_CCTV;
 
     private DatabaseReference mDatabase;
     private String[] strTemp;
@@ -40,15 +39,8 @@ public class Menu_home extends Fragment {
     @Override
     public View onCreateView(@NonNull @NotNull LayoutInflater inflater, @Nullable @org.jetbrains.annotations.Nullable ViewGroup container, @Nullable @org.jetbrains.annotations.Nullable Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.menu_home,container,false);
-//        btn_CCTV = view.findViewById(R.id.btn_cctv);
         tv_Baby_temper = view.findViewById(R.id.tv_Baby_temper);
         temp = new ArrayList<>();
-//        btn_CCTV.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                startActivity(new Intent(getContext(), CCTV.class));
-//            }
-//        });
 
         mDatabase = FirebaseDatabase.getInstance().getReference();
         mDatabase.child("Temp").child(getTime()).get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
