@@ -14,5 +14,9 @@
 - 지도 : 아기가 아플때 현재 진료 가능한 응급 병원을 알려줌
     -> 공공데이터를 활용하여 마커 표시와 리스트화
 
+- 프로젝트 소개
+https://seokee-note.tistory.com/6
+
 - 앱 소개
 https://youtu.be/9pVVZbkBs4I
+
